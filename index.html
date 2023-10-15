@@ -46,12 +46,12 @@
                 <div class="card card-compact w-full bg-base-100 shadow-xl">
                     <figure><img class="w-full h-40" src="img/coffee.jpg" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Coffee JS</h2>
+                        <h2 class="card-title" id="first-name">Coffee JS</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime accusamus facilis, doloremque eaque voluptas illum voluptate consectetur vero aliquid illo?</p>
-                        <p>Price: $ <span>120</span></p>
-                        <p>Quantity:<span>5</span></p>
+                        <p>Price: $ <span id="first-price">120</span></p>
+                        <p>Quantity:<span id="first-quantity">5</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary" id="first-card">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                         <p>Price: $ <span>200</span></p>
                         <p>Quantity:<span>10</span></p>
                         <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Add to Cart</button>
+                            <button class="btn btn-primary" id="second-card">Add to Cart</button>
                         </div>
                     </div>
                 </div>
@@ -117,11 +117,12 @@
                           <th>No</th>
                           <th>Name</th>
                           <th>Price</th>
+                          <th>Quantity</th>
                           <th>Total</th>
                           
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="table-container">
                         <!-- row 1
                         <tr>
                           <th>1</th>
